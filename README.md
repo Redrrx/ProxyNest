@@ -19,13 +19,11 @@ ProxyNest is a proxy managment API that is well-suited for mid-scale and will so
 ### Proxy management:
 - add/update/delete proxies and fetch by country tag or codes.
 - reset all proxies if anything goes wrong.
-<br>
 
 ### Reservation system:
 - reserve proxies for instances.
 - refresh the reservation on request.
 - clear the instance reservation.
-<br>
 
 ### Background checks:
 - periodic check for proxy uptime and latency.
