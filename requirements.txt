@@ -1,0 +1,12 @@
+aiohttp==3.8.6
+aiohttp_socks==0.8.4
+colorlog==6.7.0
+fastapi==0.104.0
+geoip2==4.7.0
+motor==3.3.1
+pydantic==2.4.2
+pymongo== 4.5.0
+pytz==2023.3
+bcrypt==4.0.1
+starlette==0.27.0
+uvicorn==0.23.2
