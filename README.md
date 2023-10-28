@@ -63,7 +63,7 @@ you'll have it running in no time serving requests !
 ### Using the python script directly.
 <details>
   <summary>requires Python 3.10, click here.</summary>
- 1 - Modify your enivronment variables.
+ 1 - Modify your environment variables.
 
 for linux change setenv.sh then run this command.
 
