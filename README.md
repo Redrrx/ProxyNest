@@ -34,7 +34,9 @@ ProxyNest is a proxy managment API that is well-suited for mid-scale and will so
 
 
 ## Setup.
-
+```
+the default username is admin and password is password :p 
+```
 ###  Using Docker 🐋 (Recommended).
 
 Make sure you have docker installed and a mongoDB hosted.
