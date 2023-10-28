@@ -1,9 +1,10 @@
-# 🌐 ProxyNest a Proxy Management Solution! 
+# <p align="center">🪹 ProxyNest a Proxy Management Solution! </p>
 
 
 Managing proxies for scaled data scraping and other automation operations will eventually require something like ProxyNest.
 ProxyNest is a proxy managment API that is well-suited for mid-scale and will soon be made for large ones.
 
+![alt text](https://i.imgur.com/Zr4K21h.png)
 
 
 ## 🚀 The tech stack :
@@ -16,16 +17,16 @@ ProxyNest is a proxy managment API that is well-suited for mid-scale and will so
 
 ## 🛠️ The features :
 
-### Proxy management:
+### ⚙️ Proxy management:
 - add/update/delete proxies and fetch by country tag or codes.
 - reset all proxies if anything goes wrong.
 
-### Reservation system:
+### 🎫 Reservation system:
 - reserve proxies for instances.
 - refresh the reservation on request.
 - clear the instance reservation.
 
-### Background checks:
+###  Background checks:
 - periodic check for proxy uptime and latency.
 - periodic check for country code of the IP.
 - cleanup for instances that expired.
@@ -56,10 +57,11 @@ you'll have it running in no time serving requests !
 
 ![alt text](https://i.imgur.com/AkWyn3I.png)
 
-### Using the python script directly.
-requires Python 3.10.
 
-1 - Modify your enivronment variables.
+### Using the python script directly.
+<details>
+  <summary>requires Python 3.10, click here.</summary>
+ 1 - Modify your enivronment variables.
 
 for linux change setenv.sh then run this command.
 
@@ -87,9 +89,37 @@ feel free to edit this part of the code in APY.py  to change uvicorn launch sett
 if __name__ == "__main__":
     uvicorn.run("API:app", host="0.0.0.0", port=8042)
 ```
+</details>
+
+<br>
 
 
-## ⏰ Planned upgrades :
+### 🔗 Routes summary
+
+Including the overall routes in here, you can read indepth about the documentation when you read the webserver, or the wiki once its setup.
+
+
+| Route url  | Usage |
+| ------------- | ------------- |
+| /add_proxies | Add proxies. |
+|/proxies  | Get proxies  |
+|/assign_proxy  | Assign proxies to an instance  |
+|/update_proxy/{proxy_id}  | update proxy  |
+|/delete_proxy/{proxy_id}  | delete proxy  |
+|/refresh_proxy_usage/{proxy_id}  | refresh proxy  |
+|/clear_instance_proxies/{instance_id}  | clearn instance proxies|
+|/clear_instance_from_specific_proxy/{proxy_id}/{instance_id}  | clear instance from specific proxy |
+|/reset_all_proxies  | reset all proxies  |
+|/reset-password/  | reset auth password  |
+
+
+<br>
+
+## ⏰ Planned tasks :
 - Better authentication.
 - Considerably better task queuing instead of using asyncio task queuing for very large scale operations.
+- Custom host to measure latency.
 - Multi user support.
+- Write more documentation
+- Stress test with k6
+- more profiling
