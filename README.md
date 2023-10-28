@@ -125,3 +125,7 @@ Including the overall routes in here, you can read indepth about the documentati
 - Write more documentation
 - Stress test with k6
 - more profiling
+
+
+## important mention. 
+This project includes GeoLite2 data created by MaxMind, available from [https://www.maxmind.com](https://www.maxmind.com).
