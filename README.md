@@ -103,6 +103,7 @@ Including the overall routes in here, you can read indepth about the documentati
 
 | Route url  | Usage |
 | ------------- | ------------- |
+| /Docs  | Full routes documentation  |
 | /add_proxies | Add proxies. |
 |/proxies  | Get proxies  |
 |/assign_proxy  | Assign proxies to an instance  |
@@ -117,7 +118,18 @@ Including the overall routes in here, you can read indepth about the documentati
 
 <br>
 
+## TODO
+- [ ] fix tag system with proxy reservation as its unused there for now.
+- [ ] write an actual documentation of the project.
+- [ ] build a docker image automatically and publish using Github actions.
+- [ ] perfecounter usage for response time instead of what is being currently used.
+
+<br>
+
+
+
 ## ⏰ Planned tasks :
+- Integrated rotating proxy creation.
 - Better authentication.
 - Considerably better task queuing instead of using asyncio task queuing for very large scale operations.
 - Custom host to measure latency.
