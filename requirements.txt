@@ -1,7 +1,7 @@
 aiohttp==3.8.6
 aiohttp_socks==0.8.4
 colorlog==6.7.0
-fastapi==0.104.0
+fastapi==0.109.1
 geoip2==4.7.0
 motor==3.3.1
 pydantic==2.4.2
